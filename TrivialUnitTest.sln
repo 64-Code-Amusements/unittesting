@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BugHunter", "BugHunter\BugHunter.csproj", "{95F74F4D-B782-4E0D-9163-EEE941B11BCF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BugHunter.xUnit", "BugHunter.xUnit\BugHunter.xUnit.csproj", "{4C743189-8FAC-421E-B910-D6138B5B40ED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{95F74F4D-B782-4E0D-9163-EEE941B11BCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95F74F4D-B782-4E0D-9163-EEE941B11BCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95F74F4D-B782-4E0D-9163-EEE941B11BCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C743189-8FAC-421E-B910-D6138B5B40ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C743189-8FAC-421E-B910-D6138B5B40ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C743189-8FAC-421E-B910-D6138B5B40ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C743189-8FAC-421E-B910-D6138B5B40ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
