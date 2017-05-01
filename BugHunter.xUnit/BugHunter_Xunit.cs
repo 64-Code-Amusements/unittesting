@@ -2,7 +2,7 @@
 
 namespace BugHunter.xUnit
 {
-    public class BugHunterXunit
+    public class BugHunter_Xunit
     {
         [Theory]
         [InlineData(false, true)]
@@ -21,9 +21,9 @@ namespace BugHunter.xUnit
 
             if (shouldBeDead)
             {
-                Assert.True(bug.IsDead());
+                Assert.True(bug.IsDead);
             }
-            else { Assert.False(bug.IsDead()); }
+            else { Assert.False(bug.IsDead); }
         }
     }
 }

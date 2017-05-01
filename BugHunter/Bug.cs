@@ -1,6 +1,6 @@
 ﻿namespace BugHunter
 {
-    public class Bug
+    public class Bug : IBug
     {
 
         private bool dodging;
@@ -21,14 +21,20 @@
             dodging = false;
         }
 
-        public bool IsDodging()
+        public bool IsDodging
         {
-            return dodging;
+            get
+            {
+                return dodging;
+            }
         }
 
-        public bool IsDead()
+        public bool IsDead
         {
-            return dead;
+            get
+            {
+                return dead;
+            }
         }
     }
 }

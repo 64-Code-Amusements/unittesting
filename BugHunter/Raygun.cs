@@ -6,20 +6,15 @@
 
         private int ammo = 3;
 
-        public void FireAt(Bug bug)
+        public void FireAt(IBug bug)
         {
-            if (HasAmmo())
-            {
-                if (bug.IsDodging())
-                {
-                    bug.Miss();
-                }
-                else
-                {
-                    bug.Hit();
-                }
-                ammo--;
-            }
+            if (!HasAmmo)
+                return;
+            if (bug.IsDodging)
+                bug.Miss();
+            else
+                bug.Hit();
+            ammo--;
         }
 
         public void Recharge()
@@ -27,9 +22,12 @@
             ammo = 3;
         }
 
-        public bool HasAmmo()
+        public bool HasAmmo
         {
-            return ammo > 0;
+            get
+            {
+                return ammo > 0;
+            }
         }
     }
 }

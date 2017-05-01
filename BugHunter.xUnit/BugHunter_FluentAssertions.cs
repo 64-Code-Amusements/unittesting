@@ -3,8 +3,7 @@ using FluentAssertions;
 
 namespace BugHunter.xUnit
 {
-
-    public class BugHunterFluentAssertions
+    public class BugHunter_FluentAssertions
     {
         [Theory]
         [InlineData(1)]
@@ -24,11 +23,11 @@ namespace BugHunter.xUnit
 
             if (fireCount >= 3)
             {
-                gun.HasAmmo().Should().BeFalse();
+                gun.HasAmmo.Should().BeFalse();
             }
             else
             {
-                gun.HasAmmo().Should().BeTrue();
+                gun.HasAmmo.Should().BeTrue();
             }
         }
     }
