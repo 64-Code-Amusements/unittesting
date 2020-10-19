@@ -1,5 +1,5 @@
 ﻿Feature: BugBlaster
-	In order to avoid being overrun by bus
+	In order to avoid being overrun by bugs
 	As a space marine
 	I want to be able to blast bugs
 
