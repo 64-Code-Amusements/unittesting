@@ -23,11 +23,11 @@ namespace BugHunter.xUnit
 
             if (fireCount >= 3)
             {
-                gun.HasAmmo.Should().BeFalse();
+                gun.CanFire.Should().BeFalse();
             }
             else
             {
-                gun.HasAmmo.Should().BeTrue();
+                gun.CanFire.Should().BeTrue();
             }
         }
     }

@@ -3,12 +3,12 @@
     public class Bug : IBug
     {
 
-        private bool dodging;
+        public bool IsDodging {get; private set;}= true;
         private bool dead;
 
         public void Dodge()
         {
-            dodging = true;
+            IsDodging = true;
         }
 
         public void Hit()
@@ -18,15 +18,7 @@
 
         public void Miss()
         {
-            dodging = false;
-        }
-
-        public bool IsDodging
-        {
-            get
-            {
-                return dodging;
-            }
+            IsDodging = false;
         }
 
         public bool IsDead

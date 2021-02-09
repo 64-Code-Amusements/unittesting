@@ -1,33 +1,27 @@
 ﻿namespace BugHunter
 {
 
-    public class Raygun
+    public class Raygun:IRaygun
     {
 
-        private int ammo = 3;
+        private int battery = 3;
 
         public void FireAt(IBug bug)
         {
-            if (!HasAmmo)
+            if (!CanFire)
                 return;
             if (bug.IsDodging)
                 bug.Miss();
             else
                 bug.Hit();
-            ammo--;
+            battery--;
         }
 
         public void Recharge()
         {
-            ammo = 3;
+            battery = 3;
         }
 
-        public bool HasAmmo
-        {
-            get
-            {
-                return ammo > 0;
-            }
-        }
+        public bool CanFire {get => battery > 0;}
     }
 }

@@ -7,3 +7,13 @@ An Introduction to Various Unittesting Strategies
 * https://nsubstitute.github.io/[nSubstitute]
 * https://docs.specflow.org/en/latest/[Spec Flow]
 ----
+
+== Adding the `try-dotnet`
+
+Adding the https://github.com/dotnet/try/blob/main/DotNetTryLocal.md[try dotnet] tool to the mix.
+
+.Installing the Tooling
+[source,bash]
+----
+dotnet tool update -g Microsoft.dotnet-try
+----
