@@ -250,4 +250,4 @@ paket-files/
 # JetBrains Rider
 .idea/
 *.sln.iml
-/BugHunter.xUnit/spec/BugBlaster.feature.cs
+**/spec/*.feature.cs
