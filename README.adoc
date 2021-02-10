@@ -1,6 +1,18 @@
 An Introduction to Various Unittesting Strategies
 =================================================
 
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
+ifdef::env-vscode[]
+:warning-caption: ⚠️
+endif::[]
+
 .Sources
 ----
 * https://xunit.net/[xUnit]
@@ -10,6 +22,9 @@ An Introduction to Various Unittesting Strategies
 
 == Adding the `try-dotnet`
 
+[WARNING] 
+.The dotnet-try requires .net 3.1, this does not run with .net 5.0
+====
 Adding the https://github.com/dotnet/try/blob/main/DotNetTryLocal.md[try dotnet] tool to the mix.
 
 .Installing the Tooling
@@ -17,3 +32,4 @@ Adding the https://github.com/dotnet/try/blob/main/DotNetTryLocal.md[try dotnet]
 ----
 dotnet tool update -g Microsoft.dotnet-try
 ----
+====

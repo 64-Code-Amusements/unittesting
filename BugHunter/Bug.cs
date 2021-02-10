@@ -3,7 +3,7 @@
     public class Bug : IBug
     {
 
-        public bool IsDodging {get; private set;}= true;
+        public bool IsDodging { get; private set; } = false;
         private bool dead;
 
         public void Dodge()
