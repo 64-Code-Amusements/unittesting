@@ -4,7 +4,7 @@
     {
 
         public bool IsDodging { get; private set; } = false;
-        private bool dead;
+        public bool IsDead {get; private set;} = false;
 
         public void Dodge()
         {
@@ -13,7 +13,7 @@
 
         public void Hit()
         {
-            dead = true;
+            IsDead = true;
         }
 
         public void Miss()
@@ -21,12 +21,5 @@
             IsDodging = false;
         }
 
-        public bool IsDead
-        {
-            get
-            {
-                return dead;
-            }
-        }
     }
 }
