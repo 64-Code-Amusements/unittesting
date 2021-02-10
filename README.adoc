@@ -13,11 +13,18 @@ ifdef::env-vscode[]
 :warning-caption: ⚠️
 endif::[]
 
+== Setup
+
 .Sources
 ----
 * https://xunit.net/[xUnit]
 * https://nsubstitute.github.io/[nSubstitute]
 * https://docs.specflow.org/en/latest/[Spec Flow]
+----
+
+.Unit Tests and Coverage in VSCode
+----
+* https://dev.to/equiman/net-core-unit-test-and-code-coverage-with-visual-studio-code-37bp
 ----
 
 == Adding the `try-dotnet`
