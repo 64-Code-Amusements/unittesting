@@ -31,6 +31,21 @@ namespace BugHunter.xUnit
             bug.DidNotReceive().Hit();
             bug.Received().Miss();
         }
+
+        [Fact]
+        public void WhenTrooperFiresBlasterIsDischarged()
+        {
+            var mBlaster = Substitute.For<IRaygun>();
+            mBlaster.CanFire.Returns(true);
+            var mTarget = Substitute.For<IBug>();
+            var mOther = Substitute.For<IBug>();
+            var trooper = new StarshipTrooper(mBlaster);
+
+            trooper.FireAt(mTarget);
+
+             mBlaster.Received().FireAt(mOther);
+            mBlaster.Received().FireAt(mTarget);
+        }
     }
 }
 

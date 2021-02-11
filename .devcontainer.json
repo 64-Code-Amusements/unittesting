@@ -13,6 +13,8 @@
 	},
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
+		"ryanluker.vscode-coverage-gutters",
+		"urbanoanderson.vscode-coverlet",
 		"formulahendry.code-runner",
 		"hbenl.vscode-test-explorer",
 		"asciidoctor.asciidoctor-vscode",

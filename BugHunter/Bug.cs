@@ -6,7 +6,7 @@
         public bool IsDodging { get; private set; } = false;
         public bool IsDead {get; private set;} = false;
 
-        public void Dodge()
+        public void Dodge() 
         {
             IsDodging = true;
         }
